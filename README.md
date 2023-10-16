@@ -29,12 +29,20 @@ The application allows users to search for items using various criteria, view th
 
 - **Pagination**: To manage a large number of items, the application displays 5 items at first. Users can navigate to the next set of items clicking the "More" button.
 
+- **URL Query**: When you perform a search, filter or click the load more button, parameters are added to the url, which, if refreshed or shared, will load the data.
+
+- **Dark/Light theme**: The application will take into account the theme of your device and change the web to dark or light.
+
+- **Mobile friendly**: Adapts to the screens of different devices, optimized for mobile and desktop.
+
 ## Technologies Used
 
-- NextJS 13
-- Tailwind CSS
-- TypeScript
-- Responsive design and user-friendly UX/UI
+- NextJS 13 (as framework)
+- Tailwind CSS (for styles)
+- TypeScript (for typed programming)
+- Jest (for testing)
+- Zustand (Redux alternative)
+- next-usequerystate (state for url params)
 
 ## Data Source
 
@@ -44,7 +52,7 @@ Here's an example of the item structure in the JSON:
 {
   "title": "Sample Item",
   "description": "This is a sample item description.",
-  "price": 19.99,
+  "price": "20",
   "email": "sample@example.com",
   "picture": "sample.jpg"
 }
